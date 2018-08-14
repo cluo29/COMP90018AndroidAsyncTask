@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
         protected void onPreExecute()
         {
-            runOnUiThread(new Runnable() {
-                public void run() {
+            //runOnUiThread(new Runnable() {
+                //public void run() {
                     TextView txt = (TextView) findViewById(R.id.text1);
                     txt.setText("Preparing");
-                }
-            });
+                //}
+            //});
         }
 
         protected String doInBackground(Integer... number) {
@@ -50,12 +50,12 @@ public class MainActivity extends AppCompatActivity {
 
         protected void onPostExecute(String result) {
 
-            runOnUiThread(new Runnable() {
-                public void run() {
+            //runOnUiThread(new Runnable() {
+                //public void run() {
                     TextView txt = (TextView) findViewById(R.id.text1);
                     txt.setText("Executed");
-                }
-            });
+                //}
+            //});
         }
     }
 
